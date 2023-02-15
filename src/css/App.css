@@ -1,5 +1,5 @@
 .container{
-    min-height: 100vh;    
+    min-height: 80dvh;    
     color: #f5f6f4;
 }
 .hero-left{
@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100dvh;
+    height: 80dvh;
 }
 .left-container{
     width: 100% !important;
@@ -20,4 +20,15 @@
 .hero-subtitle{
     font-size: 24px;
     font-weight: 300;
+}
+nav a{
+    color: #fff !important;
+}
+.nav-container{
+    margin-top: 20px;
+}
+.connectWalletBtn:hover{
+    color: #000 !important;
+    border-color: transparent !important;
+    background-color: #f1f1f1;
 }

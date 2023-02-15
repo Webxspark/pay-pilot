@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <div className='container'>
+        <Navbar />
         <div className="row">
           <div className="col-8">
             <div className='hero-left'>
@@ -16,7 +17,7 @@ function App() {
           </div>
           <div className="col-4">
             <div className='hero-right'>
-              Hi :)
+              
             </div>
           </div>
         </div>
