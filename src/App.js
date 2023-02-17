@@ -1,29 +1,21 @@
 import './css/App.css';
-import Navbar from './components/nav';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from './pages/landing';
+import TradersLanding from './pages/traders';
+import InvestorsLanding from './pages/investors';
 
 function App() {
   return (
-    <>
-      <div className='container'>
-        <Navbar />
-        <div className="row">
-          <div className="col-8">
-            <div className='hero-left'>
-              <div className='left-container'>
-              <div className='hero-title'>Title Goes here</div>
-              <div className='hero-subtitle'>SubTitle</div>
-              </div>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className='hero-right'>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+    <div className='container'>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/traders' element={<TradersLanding />} />
+          <Route path='/investors' element={<InvestorsLanding />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
 
 export default App;
