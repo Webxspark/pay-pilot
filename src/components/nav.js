@@ -6,40 +6,45 @@ const Navbar = (props) => {
     const items = [
         {
             label: (
-                <Link to="/traders" className='nav-link' id='traders' rel="noopener noreferrer">Brand for Traders</Link>
-            )
+                <Link to="/traders" className='nav-link' rel="noopener noreferrer">Brand for Traders</Link>
+            ),
+            key: "traders"
         },
         {
             label: (
-                <Link to="/investors" className='nav-link' id='investors' rel="noopener noreferrer">Brand for Investors</Link>
-            )
+                <Link to="/investors" className='nav-link' rel="noopener noreferrer">Brand for Investors</Link>
+            ),
+            key: "investors"
         },
         {
             label: (
-                <Link to="#" className='nav-link' id='marketTracking' rel="noopener noreferrer">Live Market Tracking</Link>
-            )
+                <Link to="#" className='nav-link' rel="noopener noreferrer">Live Market Tracking</Link>
+            ),
+            key: "marketTracking"
         },
         {
             label: (
-                <Link to="#" className='nav-link' id='aboutUs' rel="noopener noreferrer">About Us</Link>
-            )
+                <Link to="#" className='nav-link' rel="noopener noreferrer">About Us</Link>
+            ),
+            key: "aboutUs"
         },
         {
             label: (
                 <Link to="#" className='nav-link' id='blog' rel="noopener noreferrer">Blog</Link>
-            )
+            ),
+            key: "blog"
         },
     ];
-    const [current, setCurrent] = useState('home');
+    const [current, setCurrent] = useState('');
     const onClick = (e) => {
         console.log('click ', e);
         setCurrent(e.key);
     };
     setTimeout(() => {
         if (props.activeId) {
-            document.querySelector(props.activeId).parentElement.parentElement.className += " ant-menu-item-selected";
+            setCurrent(props.activeId);
         }
-    }, 500);
+    }, 0);
     return (
         <>
             <div className='nav-container'>

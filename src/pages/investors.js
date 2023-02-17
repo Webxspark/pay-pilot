@@ -3,7 +3,7 @@ import Navbar from '../components/nav';
 const InvestorsLanding = () => {
     return(
         <>
-        <Navbar activeId={"#investors"} />
+        <Navbar activeId={"investors"} />
         <div className="row">
                 <div className="col-8">
                     <div className='hero-left'>
