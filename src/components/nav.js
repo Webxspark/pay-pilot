@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, Col, Row, Button } from 'antd';
 import { Link, Outlet } from "react-router-dom";
-
+import Logo from '../assets/logo.svg';
 const Navbar = (props) => {
     const items = [
         {
@@ -50,7 +50,11 @@ const Navbar = (props) => {
             <div className='nav-container'>
                 <Row>
                     <Col span={4}>
-                        <h3><Link to="/" className='nav-link'>Logo</Link></h3>
+                        <h3><Link to="/" className='nav-link'>
+                            <img src={Logo} style={{
+                                width: '60px'
+                            }} />
+                        </Link></h3>
                     </Col>
                     <Col span={14}>
                         <Menu
@@ -63,6 +67,7 @@ const Navbar = (props) => {
                                 color: '#fff'
                             }}
                             theme="dark"
+                            className='d-sm-none d-lg-block d-none d-md-block'
                         />
                     </Col>
                     <Col span={6}>
@@ -70,7 +75,7 @@ const Navbar = (props) => {
                             <Button
                                 shape='round'
                                 size='large'
-                                className='connectWalletBtn'
+                                className='connectWalletBtn d-sm-none d-lg-block d-none d-md-block'
                             >Connect Wallet</Button>
                         </div>
                     </Col>
