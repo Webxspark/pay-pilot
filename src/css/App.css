@@ -18,8 +18,9 @@
     font-weight: bolder;
 }
 .hero-subtitle{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
+    color: #ff5c5c;
 }
 nav a{
     color: #fff !important;

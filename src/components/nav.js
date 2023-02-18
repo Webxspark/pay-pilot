@@ -6,21 +6,15 @@ const Navbar = (props) => {
     const items = [
         {
             label: (
-                <Link to="/traders" className='nav-link' rel="noopener noreferrer">Brand for Traders</Link>
+                <Link to="/traders" className='nav-link' rel="noopener noreferrer">Pay Pilot for Traders</Link>
             ),
             key: "traders"
         },
         {
             label: (
-                <Link to="/investors" className='nav-link' rel="noopener noreferrer">Brand for Investors</Link>
+                <Link to="/investors" className='nav-link' rel="noopener noreferrer">Pay Pilot for Investors</Link>
             ),
             key: "investors"
-        },
-        {
-            label: (
-                <Link to="#" className='nav-link' rel="noopener noreferrer">Live Market Tracking</Link>
-            ),
-            key: "marketTracking"
         },
         {
             label: (
