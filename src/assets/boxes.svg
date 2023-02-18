@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="404" height="404" fill="none" viewBox="0 0 404 404" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="4" height="4" fill="#261919"></rect>
+        </pattern>
+    </defs>
+    <rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)"></rect>
+</svg>

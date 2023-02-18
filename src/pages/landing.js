@@ -1,14 +1,17 @@
 import Navbar from '../components/nav';
 import HeroImg from '../assets/1.png'
 import HeroImg2 from '../assets/2.png'
-import { Divider } from "antd";
+import { Button, Divider } from "antd";
 import SvgDivider from '../components/divider';
 import { useLoadingContext } from "react-router-loading";
+import BoxesSvg from '../assets/boxes.svg';
+import { Input, Space } from 'antd';
+const { Search } = Input;
 const LandingPage = () => {
     const loadingContext = useLoadingContext();
     loadingContext.done()
     return (
-        <>
+        <div className=''>
             <Navbar />
             <div className="row">
                 <div className="col-8">
@@ -53,7 +56,39 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
-        </>
+            <section className='testimonial-container'>
+                <div className='testimonial' >
+                    <img className='square-1' alt='decor' src={BoxesSvg} />
+                    <blockquote cite="">
+                        <p>“Pay Pilot is a great platform for making payments. It is fast, secure and easy to use. I would recommend it to anyone looking for a secure payment platform.”</p>
+                        <footer className='testimonial-author'>
+                            <img className='author' src="https://cdn.webxspark.com/assets/images/static-profile.webp" alt="" width={55} height={55} />
+                            John Doe</footer>
+                    </blockquote>
+                </div>
+            </section>
+            <div className='divider extra'></div>
+            <div className="row">
+                <div className="col-12">
+                    <div class="subscribe-box">
+                        <div className='content'>
+                            <h2>Join our community of fans that love Pay Pilot</h2>
+                            <Divider />
+                            <div className='form'>
+                                <Search
+                                    placeholder="Enter your email..."
+                                    allowClear
+                                    enterButton="Join the waiting list"
+                                    size="large"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div className='divider'></div>
+        </div>
     );
 }
 export default LandingPage;
