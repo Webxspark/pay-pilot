@@ -1,6 +1,9 @@
 import Navbar from '../components/nav';
+import { useLoadingContext } from "react-router-loading";
 
 const InvestorsLanding = () => {
+    const loadingContext = useLoadingContext();
+    loadingContext.done()
     return(
         <>
         <Navbar activeId={"investors"} />

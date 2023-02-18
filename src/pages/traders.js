@@ -1,10 +1,13 @@
 import Navbar from '../components/nav';
+import { useLoadingContext } from "react-router-loading";
 
 const TradersLanding = () => {
-    return(
+    const loadingContext = useLoadingContext();
+    loadingContext.done()
+    return (
         <>
-        <Navbar activeId={"traders"} />
-        <div className="row">
+            <Navbar activeId={"traders"} />
+            <div className="row">
                 <div className="col-8">
                     <div className='hero-left'>
                         <div className='left-container'>

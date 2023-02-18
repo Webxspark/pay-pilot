@@ -3,8 +3,10 @@ import HeroImg from '../assets/1.png'
 import HeroImg2 from '../assets/2.png'
 import { Divider } from "antd";
 import SvgDivider from '../components/divider';
-
+import { useLoadingContext } from "react-router-loading";
 const LandingPage = () => {
+    const loadingContext = useLoadingContext();
+    loadingContext.done()
     return (
         <>
             <Navbar />
@@ -29,7 +31,7 @@ const LandingPage = () => {
                 position: 'relative',
                 bottom: '100px'
             }}>
-                <SvgDivider />
+                {/* <SvgDivider /> */}
                 <div className="col-4 d-flex justify-content-center align-items-center">
                     <div className='hero-right'>
                         <img alt='hero-img' style={{

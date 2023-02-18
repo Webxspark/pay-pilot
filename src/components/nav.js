@@ -66,11 +66,12 @@ const Navbar = (props) => {
                     </Col>
                     <Col span={6}>
                         <div className='text-end'>
-                            <Button
+                            {/* For easy development, routing this btn to dashboard */}
+                            <Link to="/Dashboard" ><Button
                                 shape='round'
                                 size='large'
                                 className='connectWalletBtn d-sm-none d-lg-block d-none d-md-block'
-                            >Connect Wallet</Button>
+                            >Connect Wallet</Button></Link>
                         </div>
                     </Col>
                 </Row>
