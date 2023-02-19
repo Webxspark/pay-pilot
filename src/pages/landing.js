@@ -6,6 +6,7 @@ import SvgDivider from '../components/divider';
 import { useLoadingContext } from "react-router-loading";
 import BoxesSvg from '../assets/boxes.svg';
 import { Input, Space } from 'antd';
+import SubscribeBox from '../components/subscribeBox';
 const { Search } = Input;
 const LandingPage = () => {
     const loadingContext = useLoadingContext();
@@ -65,29 +66,11 @@ const LandingPage = () => {
                             <img className='author' src="https://cdn.webxspark.com/assets/images/static-profile.webp" alt="" width={55} height={55} />
                             John Doe</footer>
                     </blockquote>
+                    <img className='square-2' alt='decor' src={BoxesSvg} />
                 </div>
             </section>
             <div className='divider extra'></div>
-            <div className="row">
-                <div className="col-12">
-                    <div class="subscribe-box">
-                        <div className='content'>
-                            <h2>Join our community of fans that love Pay Pilot</h2>
-                            <Divider />
-                            <div className='form'>
-                                <Search
-                                    placeholder="Enter your email..."
-                                    allowClear
-                                    enterButton="Join the waiting list"
-                                    size="large"
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div className='divider'></div>
+            <SubscribeBox />
         </div>
     );
 }

@@ -4,5 +4,22 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: #0e003b;
+  animation: changeBg 5s infinite alternate linear;
+}
+@keyframes changeBg {
+  0% {
+    background-color: #0d0c1d;
+  }
+  25% {
+    background-color: #0d0c1d;
+  }
+  50% {
+    background-color: #101728;
+  }
+  75% {
+    background-color: #101728;
+  }
+  100% {
+    background-color: #101728;
+  }
 }

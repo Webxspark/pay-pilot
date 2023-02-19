@@ -1,6 +1,6 @@
 .container {
     min-height: 80dvh;
-    color: #f5f6f4;
+    color: #9340ff;
 }
 
 .hero-left {
@@ -17,14 +17,15 @@
 
 .hero-title {
     text-align: left;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 36px;
+    font-weight: 1000;
+    padding-bottom: 20px;
 }
 
 .hero-subtitle {
     font-size: 18px;
     font-weight: 300;
-    color: #ff5c5c;
+    color: #fff;
 }
 
 nav a {
@@ -81,7 +82,16 @@ nav a {
     font-size: 16px;
     font-weight: normal;
 }
-
+[alt="hero-img"]{
+    filter: drop-shadow(5px 5px 30px #1f41bb);
+}
+[alt="hero-img"].about-us{
+    /* height: 325px !important;
+    width: 325px !important; */
+    transform: scale(0.92486);
+    border-radius: 15px;
+    filter: drop-shadow(-20px 10px 50px #1f41bb);
+}
 img.author {
     border-radius: 50%;
     margin-right: 10px;
@@ -91,15 +101,25 @@ img.author {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
     object-fit: cover;
 }
-
+.card-title{
+    font-size: 19px;
+}
 img.square-1 {
     position: absolute;
-    top: 0;
+    top: 15px;
     bottom: 0;
     right: 0;
     left: -8%;
     height: 100%;
     transform: rotate(8deg);
+    color: #fff !important;
+}
+img.square-2 {
+    position: absolute;
+    top: 225px;
+    bottom: 0;
+    right: 75px;
+    height: 100%;
     color: #fff !important;
 }
 

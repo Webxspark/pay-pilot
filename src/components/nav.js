@@ -18,13 +18,13 @@ const Navbar = (props) => {
         },
         {
             label: (
-                <Link to="#" className='nav-link' rel="noopener noreferrer">About Us</Link>
+                <Link to="/about-us" className='nav-link' rel="noopener noreferrer">About Us</Link>
             ),
             key: "aboutUs"
         },
         {
             label: (
-                <Link to="#" className='nav-link' id='blog' rel="noopener noreferrer">Blog</Link>
+                <Link to="/blog" className='nav-link' id='blog' rel="noopener noreferrer">Blog</Link>
             ),
             key: "blog"
         },

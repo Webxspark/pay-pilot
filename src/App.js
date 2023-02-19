@@ -1,10 +1,10 @@
-import './css/App.css';
 import { BrowserRouter } from "react-router-dom";
-import LandingPage from './pages/landing';
-import TradersLanding from './pages/traders';
-import InvestorsLanding from './pages/investors';
-import Dashboard from './pages/Dashboard';
 import { Routes, Route } from "react-router-loading";
+import './css/App.css';
+import LandingPage from './pages/landing';
+import Dashboard from './pages/Dashboard';
+import ComingSoon from './pages/comingSoon';
+import AboutUs from "./pages/aboutUs";
 
 function App() {
   return (
@@ -12,9 +12,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<LandingPage />} loading />
-          <Route path='/traders' element={<TradersLanding />} loading  />
-          <Route path='/investors' element={<InvestorsLanding />} loading  />
+          <Route path='/traders' element={<ComingSoon nav={'traders'} />} loading  />
+          <Route path='/investors' element={<ComingSoon nav={'investors'} />} loading  />
           <Route path='/Dashboard' element={<Dashboard />} loading  />
+          <Route path='/blog' element={<ComingSoon nav={'blog'} />} loading  />
+          <Route path='/about-us' element={<AboutUs />} loading />
         </Routes>
       </BrowserRouter>
     </div>
